@@ -1,0 +1,6 @@
+char getchar_d(){
+	char c;
+	while(XUartPs_IsReceiveData(STDIN_BASEADDRESS))
+		c = XUartPs_ReadReg(STDIN_BASEADDRESS, XUARTPS_FIFO_OFFSET);
+	return c;
+}

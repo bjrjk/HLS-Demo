@@ -1,0 +1,6 @@
+#ifndef SRC_STDIO_D_H_
+#define SRC_STDIO_D_H_
+
+char getchar_d();
+
+#endif

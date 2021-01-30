@@ -1,0 +1,18 @@
+#include "xparameters.h"
+#include "xuartps.h"
+#include "xil_printf.h"
+
+char getchar_d(){
+	char c;
+	while(XUartPs_IsReceiveData(STDIN_BASEADDRESS))
+		c = XUartPs_ReadReg(STDIN_BASEADDRESS, XUARTPS_FIFO_OFFSET);
+	if(c != '\r')
+		xil_printf("%c",c);
+	else
+		xil_printf("\n\r");
+	return c;
+}
+
+void gets_d(char* buf){
+
+}

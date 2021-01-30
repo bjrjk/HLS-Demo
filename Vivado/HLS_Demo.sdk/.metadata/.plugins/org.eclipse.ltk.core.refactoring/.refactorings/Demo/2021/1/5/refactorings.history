@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Demo/src/stdio_d&apos; to &apos;stdio_d.c&apos;" description="Rename resource &apos;stdio_d&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/stdio_d" name="stdio_d.c" stamp="1611973419338" updateReferences="true"/>
+</session>
